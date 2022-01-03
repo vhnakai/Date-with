@@ -4,8 +4,8 @@
   "description": "Projeto de TDD usando javascript",
   "main": "src/index.js",
   "scripts": {
-    "start": "node src/index.js",
-    "dev": "nodemon src/index.js",
+    "start": "node dist/serve.js",
+    "dev": "ts-node-dev --transpile-only --ignore-watch node_modules --respawn src/server.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -14,6 +14,9 @@
     "express": "^4.17.2"
   },
   "devDependencies": {
-    "nodemon": "^2.0.12"
+    "@types/express": "^4.17.13",
+    "nodemon": "^2.0.12",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.5.4"
   }
 }
